@@ -1,0 +1,6 @@
+[package]
+name = "sputnikvm-in-browser"
+version = "0.1.0"
+authors = ["sorpaas"]
+
+[dependencies]

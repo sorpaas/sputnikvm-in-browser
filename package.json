@@ -1,0 +1,24 @@
+{
+  "name": "sputnikvm-in-browser",
+  "version": "0.1.0",
+  "description": "Run SputnikVM Ethereum Virtual Machine in browser.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack --progress",
+    "serve": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereumproject/sputnikvm-in-browser.git"
+  },
+  "keywords": [
+    "evm",
+    "wasm"
+  ],
+  "author": "Wei Tang <hi@that.world>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ethereumproject/sputnikvm-in-browser/issues"
+  },
+  "homepage": "https://github.com/ethereumproject/sputnikvm-in-browser#readme"
+}
