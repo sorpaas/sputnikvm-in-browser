@@ -41,5 +41,5 @@ npm run serve
 ```
 
 Go to `http://127.0.0.1:8080` and open the web console. The example
-will execute a same EVM program using SputnikVM, and if no error is
+will execute a sample EVM program using SputnikVM, and if no error is
 reported, you will see a `0` printed.
