@@ -44,5 +44,8 @@ pub fn run_example() -> i32 {
     vm.commit_account(AccountCommitment::Nonexist(Address::default()));
     vm.fire().unwrap();
 
-    return 0;
+    match vm.status() {
+        VMStatus::ExitedOk => return 0,
+        _ => return 1,
+    }
 }
