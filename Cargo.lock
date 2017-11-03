@@ -1,4 +1,136 @@
 [[package]]
+name = "block-buffer"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byte-tools 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "generic-array 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "byte-tools"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "byteorder"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "digest"
+version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "generic-array 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "elastic-array-plus"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "etcommon-bigint"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-hexutil 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-rlp 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "etcommon-block-core"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "etcommon-bigint 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-rlp 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sha3 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "etcommon-hexutil"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "etcommon-rlp"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "elastic-array-plus 0.9.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-hexutil 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "generic-array"
+version = "0.8.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "nodrop 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "typenum 1.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "nodrop"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sha3"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "block-buffer 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "byte-tools 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "digest 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "generic-array 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "sputnikvm"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "digest 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-bigint 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-block-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-hexutil 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-rlp 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sha3 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "sputnikvm-in-browser"
 version = "0.1.0"
+dependencies = [
+ "etcommon-bigint 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-block-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-hexutil 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "etcommon-rlp 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sputnikvm 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
+[[package]]
+name = "typenum"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum block-buffer 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1339a1042f5d9f295737ad4d9a6ab6bf81c84a933dba110b9200cd6d1448b814"
+"checksum byte-tools 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "560c32574a12a89ecd91f5e742165893f86e3ab98d21f8ea548658eb9eef5f40"
+"checksum byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ff81738b726f5d099632ceaffe7fb65b90212e8dce59d518729e7e8634032d3d"
+"checksum digest 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e5b29bf156f3f4b3c4f610a25ff69370616ae6e0657d416de22645483e72af0a"
+"checksum elastic-array-plus 0.9.1 (registry+https://github.com/rust-lang/crates.io-index)" = "6432870c5bd8b1b788e12e1095c337afab982a56aad4f48fda45471ff0abcc24"
+"checksum etcommon-bigint 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)" = "3e2eb0795d53bd89269ab67fcf3eb505aab13d5039fb90aff03827f942279381"
+"checksum etcommon-block-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4c1c8ec4120aad7411aa50e67af37f122e66505c32d217a8c2d02769ff02898e"
+"checksum etcommon-hexutil 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "f004de816005d210e0af76640ade09b78aa0b6e7065ddb627782374ccd299f8a"
+"checksum etcommon-rlp 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "4d8ea61b03717f963c7a49403499135e05e1c23269882b8ab4d1e98668317254"
+"checksum generic-array 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)" = "fceb69994e330afed50c93524be68c42fa898c2d9fd4ee8da03bd7363acd26f2"
+"checksum nodrop 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)" = "9a2228dca57108069a5262f2ed8bd2e82496d2e074a06d1ccc7ce1687b6ae0a2"
+"checksum sha3 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "26405905b6a56a94c60109cfda62610507ac14a65be531f5767dec5c5a8dd6a0"
+"checksum sputnikvm 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "6e689449f31472152183d8c41a9407226c4c36cb6ab53f4652c4f9b445462e91"
+"checksum typenum 1.9.0 (registry+https://github.com/rust-lang/crates.io-index)" = "13a99dc6780ef33c78780b826cf9d2a78840b72cae9474de4bcaf9051e60ebbd"
