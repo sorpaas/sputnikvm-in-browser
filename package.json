@@ -4,8 +4,8 @@
   "description": "Run SputnikVM Ethereum Virtual Machine in browser.",
   "main": "index.js",
   "scripts": {
-    "compile": "webpack --progress",
-    "serve": "http-server"
+    "compile": "./node_modules/.bin/webpack --progress",
+    "serve": "./node_modules/.bin/http-server"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/ethereumproject/sputnikvm-in-browser/issues"
   },
-  "homepage": "https://github.com/ethereumproject/sputnikvm-in-browser#readme"
+  "homepage": "https://github.com/ethereumproject/sputnikvm-in-browser#readme",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "webpack": "^3.8.1",
+    "rust-wasm-loader": "^0.1.2"
+  }
 }
